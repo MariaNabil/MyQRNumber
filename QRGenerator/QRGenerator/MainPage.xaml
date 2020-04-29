@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:forms="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             xmlns:Controls="clr-namespace:QRGenerator"
+             mc:Ignorable="d"
+             x:Class="QRGenerator.MainPage"
+             NavigationPage.HasNavigationBar="false"
+             BackgroundColor="white" >
+
+    <StackLayout Padding="0" Margin="0">
+
+        <Image Source="i1.jpg" Margin="0,30,0,0"  ></Image>
+        <Image Source="i2.jpg" Margin="0,0,0,0"  ></Image>
+
+        <StackLayout Margin="50,0,50,30"
+                 Padding="0"
+                     VerticalOptions="CenterAndExpand">
+            <!-- Place new controls here -->
+            <!--
+<StackLayout Orientation="Horizontal">
+                <Entry
+                            Placeholder="Hello World" 
+               PlaceholderColor="#8a8a8e"
+                             Margin="0,0,50,0"
+                             VerticalOptions="CenterAndExpand"
+                                     FontSize="60"
+                                     BackgroundColor="Transparent"
+                FlowDirection="LeftToRight"
+                HeightRequest = "100" 
+                >
+                </Entry>
+            </StackLayout>-->
+            <!--<Frame CornerRadius="10"
+               HorizontalOptions="Fill"
+               VerticalOptions="EndAndExpand"
+                           BackgroundColor="#ececec" 
+               HeightRequest="150"
+               Padding="0"
+                   Margin="0,0,0,0">
+
+
+               <StackLayout  
+            HorizontalOptions="FillAndExpand"
+            Orientation="Horizontal"
+            Margin="0,0,0,0"
+            Padding="0">
+
+
+
+
+                    <Image Source="icon.png" WidthRequest="30" HeightRequest="30" Margin="10,0,10,0"></Image>
+                    <BoxView WidthRequest="2" Margin="0,10,0,10" Color="#008BD0"></BoxView>-->
+
+                        
+                        <Controls:XEntry x:Name="numberEntry" 
+               PlaceholderColor="#ffffff"
+                             Margin="0,0,0,20"
+                             VerticalOptions="Center"
+                                         FontSize="150"
+                                     BackgroundColor="Transparent"
+                                         TextChanged="EntryTextChanged"
+                                         HorizontalTextAlignment="Center"
+                                     >
+                    </Controls:XEntry>
+                <!--</StackLayout>
+            </Frame>-->
+
+            <Button Text="Generate QR" 
+           HorizontalOptions="FillAndExpand"
+                VerticalOptions="End"
+                Clicked="generateButtonClicked"
+                CornerRadius="10"
+                BackgroundColor="#008BD0"
+                TextColor="White"
+                    FontSize="15"
+                    Margin="60,0,60,0"/>
+
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

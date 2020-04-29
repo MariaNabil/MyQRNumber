@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="6" android:versionName="0.1.8" package="com.ronixtech.qrgenerator" android:installLocation="internalOnly">
+	<uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
+	<application android:label="QRGenerator.Android" android:icon="@mipmap/launcher_foreground"></application>
+</manifest>
